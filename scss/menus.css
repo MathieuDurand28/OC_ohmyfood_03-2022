@@ -1,0 +1,186 @@
+@font-face {
+  font-family: "Shrikhand Regular";
+  src: url("../police/Shrikhand/Shrikhand-Regular.ttf") format("truetype"), url("../police/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../police/Roboto/Roboto-Regular.ttf") format("truetype"), url("../police/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Light";
+  src: url("../police/Roboto/Roboto-Light.ttf") format("truetype"), url("../police/Roboto/Roboto-Light.ttf") format("truetype");
+}
+#head-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+#head-menu .menu-back {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.background {
+  position: relative;
+  z-index: -1;
+  height: 210px;
+  width: 100%;
+}
+.background img {
+  z-index: -1;
+  object-fit: cover;
+  height: 250px;
+  width: 100%;
+}
+
+.menu-content {
+  z-index: 1;
+  background-color: #f6f6f6;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  height: auto;
+  width: 100%;
+}
+.menu-content .title-menus {
+  margin-bottom: 45px;
+}
+.menu-content header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-content header .menu-title {
+  margin: 40px 0 0 15px;
+  font-size: 30px;
+}
+.menu-content header .icon {
+  font-size: 25px;
+  background-color: #f6f6f6;
+  margin-top: 45px;
+}
+.menu-content header .icon:hover {
+  transition-duration: 0.5s;
+  color: #9356DC;
+}
+.menu-content .menu-ss-title {
+  margin: 20px 0 0 15px;
+}
+.menu-content .trait {
+  width: 60px;
+  border-bottom: aquamarine 4px solid;
+  margin: 10px 0 0 17px;
+}
+.menu-content .menu-content {
+  display: flex;
+  flex-direction: column;
+}
+.menu-content .menu-list {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  margin-top: 20px;
+}
+.menu-content .menu-list a {
+  width: 100%;
+}
+.menu-content .menu-list .cssanimation {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+.menu-content .menu-list .fadeInBottom {
+  animation-name: fadeInBottom;
+}
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu-content .menu-list .plat {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: white;
+  width: 90%;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 5px lightgrey;
+  margin-bottom: 15px;
+  transform: translateY(-30px);
+  cursor: pointer;
+}
+.menu-content .menu-list .plat .card-left-side {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 5px 0 0 10px;
+}
+.menu-content .menu-list .plat .card-left-side .title-plat {
+  margin: 5px 0 0 10px;
+  text-overflow: ellipsis;
+  font-size: 4vw;
+}
+.menu-content .menu-list .plat .card-left-side .describ-plat {
+  display: block;
+  max-width: 240px;
+  height: 20px;
+  margin-left: 10px;
+  font-size: 4vw;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 15px;
+}
+.menu-content .menu-list .plat .card-right-side {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-end;
+  margin-right: 25px;
+  margin-bottom: 15px;
+}
+.menu-content .validate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 0;
+  margin: 0;
+  background-color: #99e2d0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.menu-content .cercle {
+  font-size: 25px;
+  color: white;
+}
+.menu-content #plat_one:target .cercle,
+.menu-content #plat_two:target .cercle,
+.menu-content #plat_three:target .cercle,
+.menu-content #plat_un:target .cercle,
+.menu-content #plat_deux:target .cercle,
+.menu-content #plat_trois:target .cercle,
+.menu-content #plat_uno:target .cercle,
+.menu-content #plat_dos:target .cercle,
+.menu-content #plat_tres:target .cercle {
+  transition-duration: 1s;
+  transform: rotate(360deg);
+}
+.menu-content #plat_one:target .validate,
+.menu-content #plat_two:target .validate,
+.menu-content #plat_three:target .validate,
+.menu-content #plat_un:target .validate,
+.menu-content #plat_deux:target .validate,
+.menu-content #plat_trois:target .validate,
+.menu-content #plat_uno:target .validate,
+.menu-content #plat_dos:target .validate,
+.menu-content #plat_tres:target .validate {
+  transition-duration: 1s;
+  width: 60px;
+}
+
+/*# sourceMappingURL=menus.css.map */

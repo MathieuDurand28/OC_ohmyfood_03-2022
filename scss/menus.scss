@@ -1,0 +1,184 @@
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$ternary-color: #99E2D0;
+$grey: #f6f6f6;
+@font-face {
+  font-family: "Shrikhand Regular";
+  src: url("../police/Shrikhand/Shrikhand-Regular.ttf") format("truetype"),
+  url("../police/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../police/Roboto/Roboto-Regular.ttf") format("truetype"),
+  url("../police/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Light";
+  src: url("../police/Roboto/Roboto-Light.ttf") format("truetype"),
+  url("../police/Roboto/Roboto-Light.ttf") format("truetype");
+}
+
+
+#head-menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  .menu-back{
+    font-size: 25px;
+    cursor: pointer;
+  }
+}
+
+.background{
+  position: relative;
+  z-index: -1;
+  height: 210px;
+  width: 100%;
+  img{
+    z-index: -1;
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+  }
+}
+.menu-content{
+  z-index: 1;
+  background-color: $grey;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  height: auto;
+  width: 100%;
+  .title-menus{
+    margin-bottom: 45px;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .menu-title{
+      margin: 40px 0 0 15px;
+      font-size: 30px;
+    }
+    .icon{
+      font-size: 25px;
+      background-color: $grey;
+      margin-top: 45px;
+    }
+    .icon:hover{
+      transition-duration: 0.5s;
+      color: $primary-color;
+    }
+  }
+  .menu-ss-title{
+    margin: 20px 0 0 15px;
+  }
+  .trait{
+    width: 60px;
+    border-bottom: aquamarine 4px solid;
+    margin: 10px 0 0 17px;
+  }
+  .menu-content{
+    display: flex;
+    flex-direction: column;
+  }
+  .menu-list{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    margin-top: 20px;
+    a {
+      width: 100%;
+    }
+    .cssanimation{
+      animation-duration: 2s;
+      animation-fill-mode: both;
+    }
+    .fadeInBottom { animation-name: fadeInBottom }
+    @keyframes fadeInBottom {
+      from {
+        opacity: 0;
+        transform: translateY(0);
+      }
+      to { opacity: 1 }
+    }
+    .plat{
+      display: flex;
+      flex-flow: row nowrap;
+      background-color: white;
+      width: 90%;
+      height: 60px;
+      border-radius: 10px;
+      box-shadow: 5px 5px 15px 5px lightgrey;
+      margin-bottom: 15px;
+      transform: translateY(-30px);
+      cursor: pointer;
+      .card-left-side{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin: 5px 0 0 10px;
+        .title-plat{
+          margin: 5px 0 0 10px;
+          text-overflow: ellipsis;
+          font-size: 4vw;
+        }
+        .describ-plat{
+          display: block;
+          max-width: 240px;
+          height: 20px;
+          margin-left: 10px;
+          font-size: 4vw;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          margin-bottom: 15px;
+        }
+      }
+      .card-right-side{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: flex-end;
+        margin-right: 25px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .validate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 0;
+    margin: 0;
+    background-color: #99e2d0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .cercle{
+    font-size: 25px;
+    color: white;
+  }
+  #plat_one:target,
+  #plat_two:target,
+  #plat_three:target,
+  #plat_un:target,
+  #plat_deux:target,
+  #plat_trois:target,
+  #plat_uno:target,
+  #plat_dos:target,
+  #plat_tres:target
+  {
+    .cercle{
+      transition-duration: 1s;
+      transform:rotate(360deg);
+    }
+    .validate{
+      transition-duration: 1s;
+      width: 60px;
+    }
+  }
+}
+
