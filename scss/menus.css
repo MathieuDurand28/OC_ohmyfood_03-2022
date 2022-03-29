@@ -124,7 +124,6 @@
   white-space: nowrap;
 }
 .menu-content .menu-list .plat .card-left-side .title-plat {
-  background-color: cornflowerblue;
   margin: 5px 0 0 10px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -132,7 +131,6 @@
   font-size: 15px;
 }
 .menu-content .menu-list .plat .card-left-side .describ-plat {
-  background-color: green;
   margin-left: 10px;
   width: 90%;
   font-size: 14px;
