@@ -115,21 +115,27 @@
 }
 .menu-content .menu-list .plat .card-left-side {
   display: flex;
+  max-width: 100%;
   flex-direction: column;
   align-content: center;
   margin: 5px 0 0 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu-content .menu-list .plat .card-left-side .title-plat {
+  background-color: cornflowerblue;
   margin: 5px 0 0 10px;
   text-overflow: ellipsis;
-  font-size: 4vw;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 15px;
 }
 .menu-content .menu-list .plat .card-left-side .describ-plat {
-  display: block;
-  max-width: 240px;
-  height: 20px;
+  background-color: green;
   margin-left: 10px;
-  font-size: 4vw;
+  width: 90%;
+  font-size: 14px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -181,6 +187,63 @@
 .menu-content #plat_tres:target .validate {
   transition-duration: 1s;
   width: 60px;
+}
+
+@media screen and (min-width: 700px) {
+  .menu-content header {
+    justify-content: center;
+  }
+  .menu-content header .menu-title {
+    margin: 20px auto;
+    font-size: 35px;
+  }
+  .menu-content header .heart {
+    margin: 0 auto;
+    font-size: 35px;
+  }
+
+  .entrees .title-menus .menu-ss-title {
+    font-size: 35px;
+  }
+
+  .plats .title-menus .menu-ss-title {
+    font-size: 35px;
+  }
+
+  .desserts .title-menus .menu-ss-title {
+    font-size: 35px;
+  }
+
+  .menu-list .plat {
+    height: 100px;
+  }
+  .menu-list .plat .card-left-side .title-plat {
+    width: 450px;
+    font-size: 25px;
+  }
+  .menu-list .plat .card-left-side .describ-plat {
+    width: 650px;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .background {
+    height: 410px;
+    width: 100%;
+  }
+  .background img {
+    height: 450px;
+    width: 100%;
+  }
+
+  .menu-content header .menu-title {
+    margin: 20px auto;
+    font-size: 45px;
+  }
+  .menu-content header .heart {
+    margin: 0 auto;
+    font-size: 40px;
+  }
 }
 
 /*# sourceMappingURL=menus.css.map */

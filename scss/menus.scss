@@ -116,20 +116,26 @@ $grey: #f6f6f6;
       cursor: pointer;
       .card-left-side{
         display: flex;
+        max-width: 100%;
         flex-direction: column;
         align-content: center;
         margin: 5px 0 0 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
         .title-plat{
+          background-color: cornflowerblue;
           margin: 5px 0 0 10px;
           text-overflow: ellipsis;
-          font-size: 4vw;
+          overflow: hidden;
+          white-space: nowrap;
+          font-size: 15px;
         }
         .describ-plat{
-          display: block;
-          max-width: 240px;
-          height: 20px;
+          background-color: green;
           margin-left: 10px;
-          font-size: 4vw;
+          width: 90%;
+          font-size: 14px;
           text-overflow: ellipsis;
           overflow: hidden;
           white-space: nowrap;
@@ -182,3 +188,77 @@ $grey: #f6f6f6;
   }
 }
 
+@media screen and (min-width: 700px){
+  .menu-content{
+    header{
+      justify-content: center;
+     .menu-title{
+       margin: 20px auto;
+       font-size: 35px;
+     }
+      .heart{
+        margin: 0 auto;
+        font-size: 35px;
+      }
+    }
+  }
+  .entrees{
+    .title-menus{
+      .menu-ss-title{
+        font-size: 35px;
+      }
+    }
+  }
+  .plats{
+    .title-menus{
+      .menu-ss-title{
+        font-size: 35px;
+      }
+    }
+  }
+  .desserts{
+    .title-menus{
+      .menu-ss-title{
+        font-size: 35px;
+      }
+    }
+  }
+  .menu-list{
+    .plat{
+      height: 100px;
+      .card-left-side{
+        .title-plat{
+          width: 450px;
+          font-size: 25px;
+        }
+        .describ-plat{
+          width: 650px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .background{
+    height: 410px;
+    width: 100%;
+    img{
+      height: 450px;
+      width: 100%;
+    }
+  }
+  .menu-content{
+    header{
+      .menu-title{
+        margin: 20px auto;
+        font-size: 45px;
+      }
+      .heart{
+        margin: 0 auto;
+        font-size: 40px;
+      }
+    }
+  }
+}
