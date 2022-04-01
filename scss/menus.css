@@ -48,11 +48,16 @@
 }
 .menu-content header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-basis: 100%;
 }
 .menu-content header .menu-title {
   margin: 40px 0 0 15px;
+  font-size: 30px;
+}
+.menu-content header .heart {
+  margin: 0 0 0 15px;
   font-size: 30px;
 }
 .menu-content header .icon {
@@ -189,27 +194,23 @@
 
 @media screen and (min-width: 700px) {
   .menu-content header {
+    display: flex;
+    flex-flow: row nowrap;
     justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
   }
   .menu-content header .menu-title {
-    margin: 20px auto;
+    margin: 20px 0 0 0;
     font-size: 35px;
   }
   .menu-content header .heart {
-    margin: 0 auto;
+    margin: 20px 0 0 20px;
     font-size: 35px;
   }
 
-  .entrees .title-menus .menu-ss-title {
-    font-size: 35px;
-  }
-
-  .plats .title-menus .menu-ss-title {
-    font-size: 35px;
-  }
-
-  .desserts .title-menus .menu-ss-title {
-    font-size: 35px;
+  .entrees .title-menus .menu-ss-title, .plats .title-menus .menu-ss-title, .desserts .title-menus .menu-ss-title {
+    font-size: 30px;
   }
 
   .menu-list .plat {
@@ -217,11 +218,11 @@
   }
   .menu-list .plat .card-left-side .title-plat {
     width: 450px;
-    font-size: 25px;
+    font-size: 20px;
   }
   .menu-list .plat .card-left-side .describ-plat {
     width: 650px;
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -234,13 +235,38 @@
     width: 100%;
   }
 
+  .menu-content header {
+    display: flex;
+  }
   .menu-content header .menu-title {
-    margin: 20px auto;
+    margin-left: 50px;
     font-size: 45px;
   }
   .menu-content header .heart {
-    margin: 0 auto;
     font-size: 40px;
+  }
+
+  .menu-content .menu-list .plat {
+    height: 90px;
+    width: 50%;
+  }
+  .menu-content .menu-list .plat .card-left-side .title-plat {
+    font-size: 25px;
+  }
+  .menu-content .menu-list .plat .card-left-side .describ-plat {
+    font-size: 20px;
+  }
+
+  .entrees .title-menus, .plats .title-menus, .desserts .title-menus {
+    border-bottom: aquamarine 4px solid;
+    width: 350px;
+  }
+  .entrees .title-menus .trait, .plats .title-menus .trait, .desserts .title-menus .trait {
+    display: none;
+  }
+  .entrees .title-menus .menu-ss-title, .plats .title-menus .menu-ss-title, .desserts .title-menus .menu-ss-title {
+    font-size: 40px;
+    text-align: center;
   }
 }
 
