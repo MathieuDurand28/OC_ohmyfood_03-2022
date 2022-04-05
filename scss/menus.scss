@@ -100,6 +100,16 @@ $grey: #f6f6f6;
       animation-duration: 2s;
       animation-fill-mode: both;
     }
+    .cssanimation-two{
+      animation-delay: 0.5s;
+      animation-duration: 2s;
+      animation-fill-mode: both;
+    }
+    .cssanimation-three{
+      animation-delay: 1s;
+      animation-duration: 2s;
+      animation-fill-mode: both;
+    }
     .fadeInBottom { animation-name: fadeInBottom }
     @keyframes fadeInBottom {
       from {
@@ -173,6 +183,7 @@ $grey: #f6f6f6;
   #plat_one:target,
   #plat_two:target,
   #plat_three:target,
+  #plat_four:target,
   #plat_un:target,
   #plat_deux:target,
   #plat_trois:target,
@@ -189,6 +200,9 @@ $grey: #f6f6f6;
       width: 60px;
     }
   }
+}
+#valide-menu{
+  margin-top: 50px;
 }
 
 @media screen and (min-width: 700px){
@@ -219,6 +233,7 @@ $grey: #f6f6f6;
   .menu-list{
     .plat{
       height: 100px;
+      max-width: 70%;
       .card-left-side{
         .title-plat{
           width: 450px;

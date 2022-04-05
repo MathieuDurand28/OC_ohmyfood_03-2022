@@ -94,6 +94,16 @@
   animation-duration: 2s;
   animation-fill-mode: both;
 }
+.menu-content .menu-list .cssanimation-two {
+  animation-delay: 0.5s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+.menu-content .menu-list .cssanimation-three {
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
 .menu-content .menu-list .fadeInBottom {
   animation-name: fadeInBottom;
 }
@@ -170,6 +180,7 @@
 .menu-content #plat_one:target .cercle,
 .menu-content #plat_two:target .cercle,
 .menu-content #plat_three:target .cercle,
+.menu-content #plat_four:target .cercle,
 .menu-content #plat_un:target .cercle,
 .menu-content #plat_deux:target .cercle,
 .menu-content #plat_trois:target .cercle,
@@ -182,6 +193,7 @@
 .menu-content #plat_one:target .validate,
 .menu-content #plat_two:target .validate,
 .menu-content #plat_three:target .validate,
+.menu-content #plat_four:target .validate,
 .menu-content #plat_un:target .validate,
 .menu-content #plat_deux:target .validate,
 .menu-content #plat_trois:target .validate,
@@ -190,6 +202,10 @@
 .menu-content #plat_tres:target .validate {
   transition-duration: 1s;
   width: 60px;
+}
+
+#valide-menu {
+  margin-top: 50px;
 }
 
 @media screen and (min-width: 700px) {
@@ -215,6 +231,7 @@
 
   .menu-list .plat {
     height: 100px;
+    max-width: 70%;
   }
   .menu-list .plat .card-left-side .title-plat {
     width: 450px;
