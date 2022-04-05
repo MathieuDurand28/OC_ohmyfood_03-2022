@@ -1,6 +1,8 @@
 /* Définition des couleurs */
 $primary-color: #9356DC;
+$primary-color-light: #8071DC;
 $secondary-color: #FF79DA;
+$secondary-color-light: #FF9DEB;
 $ternary-color: #99E2D0;
 $grey: #f6f6f6;
 @font-face {
@@ -191,7 +193,8 @@ a{
     cursor: pointer;
   }
   .button:hover{
-    opacity: 0.8;
+    background: linear-gradient(to bottom, $secondary-color-light, $primary-color-light);
+    box-shadow: 5px 5px 30px 5px grey;
     transition-duration: 0.5s;
   }
 }
