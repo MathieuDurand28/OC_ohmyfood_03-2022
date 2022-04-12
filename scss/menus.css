@@ -241,6 +241,14 @@
     width: 650px;
     font-size: 15px;
   }
+  .menu-list .plat:hover .cercle {
+    transition-duration: 1s;
+    transform: rotate(360deg);
+  }
+  .menu-list .plat:hover .validate {
+    transition-duration: 1s;
+    width: 60px;
+  }
 }
 @media screen and (min-width: 1000px) {
   .background {

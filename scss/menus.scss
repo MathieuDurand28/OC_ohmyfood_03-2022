@@ -245,6 +245,16 @@ $grey: #f6f6f6;
         }
       }
     }
+    .plat:hover{
+      .cercle{
+        transition-duration: 1s;
+        transform:rotate(360deg);
+      }
+      .validate{
+        transition-duration: 1s;
+        width: 60px;
+      }
+    }
   }
 }
 
